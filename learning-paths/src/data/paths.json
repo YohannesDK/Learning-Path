@@ -1,0 +1,262 @@
+{
+  "events": {
+    "nodes": [
+      {
+        "id": "e1",
+        "title": "Async vs Sync Communication",
+        "type": "article",
+        "difficulty": "beginner",
+        "min_years": 0,
+        "duration": "1h",
+        "description": "Understand the fundamental difference between synchronous and asynchronous communication patterns.",
+        "links": [
+          { "label": "Martin Fowler – Async", "url": "https://martinfowler.com" }
+        ],
+        "tags": ["fundamentals", "messaging"],
+        "position": { "x": 60, "y": 200 }
+      },
+      {
+        "id": "e2",
+        "title": "Message Brokers 101",
+        "type": "course",
+        "difficulty": "beginner",
+        "min_years": 0,
+        "duration": "3h",
+        "description": "Introduction to message brokers: what they are, why they exist, and when to use them.",
+        "links": [
+          { "label": "Udemy Course", "url": "https://udemy.com" }
+        ],
+        "tags": ["broker", "fundamentals"],
+        "position": { "x": 340, "y": 80 }
+      },
+      {
+        "id": "e3",
+        "title": "Apache Kafka Fundamentals",
+        "type": "course",
+        "difficulty": "intermediate",
+        "min_years": 1,
+        "duration": "8h",
+        "description": "Deep dive into Kafka: topics, partitions, consumer groups, and offsets.",
+        "links": [
+          { "label": "Confluent Learn", "url": "https://developer.confluent.io" }
+        ],
+        "tags": ["kafka", "streaming"],
+        "position": { "x": 340, "y": 300 }
+      },
+      {
+        "id": "e4",
+        "title": "Event Sourcing Pattern",
+        "type": "article",
+        "difficulty": "intermediate",
+        "min_years": 2,
+        "duration": "2h",
+        "description": "Learn how to model state changes as an immutable sequence of events.",
+        "links": [
+          { "label": "EventStore Docs", "url": "https://eventstore.com/docs" }
+        ],
+        "tags": ["patterns", "event-sourcing"],
+        "position": { "x": 620, "y": 80 }
+      },
+      {
+        "id": "e5",
+        "title": "Confluent Kafka Certification",
+        "type": "certificate",
+        "difficulty": "advanced",
+        "min_years": 2,
+        "duration": "20h prep",
+        "description": "Official Confluent certification for Kafka developers. Validates production-level knowledge.",
+        "links": [
+          { "label": "Confluent Cert", "url": "https://confluent.io/certification" }
+        ],
+        "tags": ["kafka", "certification"],
+        "position": { "x": 620, "y": 300 }
+      },
+      {
+        "id": "e6",
+        "title": "CQRS & Event-Driven Microservices",
+        "type": "course",
+        "difficulty": "advanced",
+        "min_years": 3,
+        "duration": "12h",
+        "description": "Combine CQRS with event-driven patterns to build scalable microservice architectures.",
+        "links": [
+          { "label": "Pluralsight", "url": "https://pluralsight.com" }
+        ],
+        "tags": ["cqrs", "microservices", "patterns"],
+        "position": { "x": 900, "y": 200 }
+      }
+    ],
+    "edges": [
+      { "id": "ee1", "source": "e1", "target": "e2", "relationship": "requires"   },
+      { "id": "ee2", "source": "e1", "target": "e3", "relationship": "requires"   },
+      { "id": "ee3", "source": "e2", "target": "e4", "relationship": "recommends" },
+      { "id": "ee4", "source": "e3", "target": "e5", "relationship": "requires"   },
+      { "id": "ee5", "source": "e4", "target": "e6", "relationship": "requires"   },
+      { "id": "ee6", "source": "e5", "target": "e6", "relationship": "recommends" }
+    ]
+  },
+
+  "cloud": {
+    "nodes": [
+      {
+        "id": "c1",
+        "title": "Cloud Computing Basics",
+        "type": "course",
+        "difficulty": "beginner",
+        "min_years": 0,
+        "duration": "4h",
+        "description": "What is cloud computing? IaaS, PaaS, SaaS explained with real examples.",
+        "links": [
+          { "label": "AWS Skill Builder", "url": "https://skillbuilder.aws" }
+        ],
+        "tags": ["cloud", "fundamentals"],
+        "position": { "x": 60, "y": 200 }
+      },
+      {
+        "id": "c2",
+        "title": "AWS Cloud Practitioner",
+        "type": "certificate",
+        "difficulty": "beginner",
+        "min_years": 0,
+        "duration": "10h prep",
+        "description": "Entry-level AWS certification. Great foundation for any cloud path.",
+        "links": [
+          { "label": "AWS Cert", "url": "https://aws.amazon.com/certification" }
+        ],
+        "tags": ["aws", "certification"],
+        "position": { "x": 340, "y": 200 }
+      },
+      {
+        "id": "c3",
+        "title": "Terraform Fundamentals",
+        "type": "course",
+        "difficulty": "intermediate",
+        "min_years": 1,
+        "duration": "6h",
+        "description": "Infrastructure as Code with Terraform. Write, plan, apply.",
+        "links": [
+          { "label": "HashiCorp Learn", "url": "https://developer.hashicorp.com" }
+        ],
+        "tags": ["iac", "terraform"],
+        "position": { "x": 620, "y": 80 }
+      },
+      {
+        "id": "c4",
+        "title": "AWS Solutions Architect",
+        "type": "certificate",
+        "difficulty": "advanced",
+        "min_years": 2,
+        "duration": "40h prep",
+        "description": "Professional-level AWS certification for designing distributed systems.",
+        "links": [
+          { "label": "AWS Cert", "url": "https://aws.amazon.com/certification" }
+        ],
+        "tags": ["aws", "certification", "architecture"],
+        "position": { "x": 620, "y": 320 }
+      },
+      {
+        "id": "c5",
+        "title": "Kubernetes in Production",
+        "type": "course",
+        "difficulty": "advanced",
+        "min_years": 3,
+        "duration": "15h",
+        "description": "Running and operating Kubernetes clusters at scale.",
+        "links": [
+          { "label": "KodeKloud", "url": "https://kodekloud.com" }
+        ],
+        "tags": ["k8s", "containers"],
+        "position": { "x": 900, "y": 200 }
+      }
+    ],
+    "edges": [
+      { "id": "ce1", "source": "c1", "target": "c2", "relationship": "requires"   },
+      { "id": "ce2", "source": "c2", "target": "c3", "relationship": "recommends" },
+      { "id": "ce3", "source": "c2", "target": "c4", "relationship": "requires"   },
+      { "id": "ce4", "source": "c3", "target": "c5", "relationship": "recommends" },
+      { "id": "ce5", "source": "c4", "target": "c5", "relationship": "recommends" }
+    ]
+  },
+
+  "security": {
+    "nodes": [
+      {
+        "id": "s1",
+        "title": "OWASP Top 10",
+        "type": "article",
+        "difficulty": "beginner",
+        "min_years": 0,
+        "duration": "3h",
+        "description": "The ten most critical web application security risks. Essential reading for every developer.",
+        "links": [
+          { "label": "OWASP.org", "url": "https://owasp.org/Top10" }
+        ],
+        "tags": ["web", "fundamentals"],
+        "position": { "x": 60, "y": 200 }
+      },
+      {
+        "id": "s2",
+        "title": "Secure Coding Practices",
+        "type": "course",
+        "difficulty": "beginner",
+        "min_years": 1,
+        "duration": "5h",
+        "description": "Input validation, output encoding, authentication, and session management.",
+        "links": [
+          { "label": "SANS Course", "url": "https://sans.org" }
+        ],
+        "tags": ["secure-coding", "fundamentals"],
+        "position": { "x": 340, "y": 200 }
+      },
+      {
+        "id": "s3",
+        "title": "Threat Modeling",
+        "type": "course",
+        "difficulty": "intermediate",
+        "min_years": 2,
+        "duration": "6h",
+        "description": "STRIDE, PASTA, and practical threat modeling for software teams.",
+        "links": [
+          { "label": "OWASP TM", "url": "https://owasp.org/threat-modeling" }
+        ],
+        "tags": ["threat-modeling", "design"],
+        "position": { "x": 620, "y": 80 }
+      },
+      {
+        "id": "s4",
+        "title": "CompTIA Security+",
+        "type": "certificate",
+        "difficulty": "intermediate",
+        "min_years": 2,
+        "duration": "30h prep",
+        "description": "Widely recognized security certification covering core concepts.",
+        "links": [
+          { "label": "CompTIA", "url": "https://comptia.org" }
+        ],
+        "tags": ["certification", "compliance"],
+        "position": { "x": 620, "y": 320 }
+      },
+      {
+        "id": "s5",
+        "title": "Penetration Testing Basics",
+        "type": "course",
+        "difficulty": "advanced",
+        "min_years": 3,
+        "duration": "20h",
+        "description": "Ethical hacking fundamentals: reconnaissance, exploitation, reporting.",
+        "links": [
+          { "label": "TryHackMe", "url": "https://tryhackme.com" }
+        ],
+        "tags": ["pentesting", "ethical-hacking"],
+        "position": { "x": 900, "y": 200 }
+      }
+    ],
+    "edges": [
+      { "id": "se1", "source": "s1", "target": "s2", "relationship": "requires"   },
+      { "id": "se2", "source": "s2", "target": "s3", "relationship": "recommends" },
+      { "id": "se3", "source": "s2", "target": "s4", "relationship": "recommends" },
+      { "id": "se4", "source": "s3", "target": "s5", "relationship": "recommends" },
+      { "id": "se5", "source": "s4", "target": "s5", "relationship": "recommends" }
+    ]
+  }
+}

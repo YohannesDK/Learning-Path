@@ -1,0 +1,20 @@
+[
+  {
+    "id": "events",
+    "label": "Event-Driven Architecture",
+    "color": "#f97316",
+    "description": "Learn how to build systems using events, queues, and async messaging."
+  },
+  {
+    "id": "cloud",
+    "label": "Cloud & Infrastructure",
+    "color": "#3b82f6",
+    "description": "From cloud basics to advanced infrastructure-as-code."
+  },
+  {
+    "id": "security",
+    "label": "Security Engineering",
+    "color": "#8b5cf6",
+    "description": "Secure coding, threat modeling, and compliance."
+  }
+]
