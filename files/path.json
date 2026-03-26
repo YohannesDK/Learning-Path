@@ -1,0 +1,27 @@
+{
+  "id": "events",
+  "nodeFiles": [
+    "paths/events/nodes/e1.json",
+    "paths/events/nodes/e2.json",
+    "paths/events/nodes/e3.json",
+    "paths/events/nodes/e4.json",
+    "paths/events/nodes/e5.json",
+    "paths/events/nodes/e6.json"
+  ],
+  "layout": {
+    "e1": { "x": 60,  "y": 200 },
+    "e2": { "x": 340, "y": 80  },
+    "e3": { "x": 340, "y": 300 },
+    "e4": { "x": 620, "y": 80  },
+    "e5": { "x": 620, "y": 300 },
+    "e6": { "x": 900, "y": 200 }
+  },
+  "edges": [
+    { "id": "ee1", "source": "e1", "target": "e2", "relationship": "requires"   },
+    { "id": "ee2", "source": "e1", "target": "e3", "relationship": "requires"   },
+    { "id": "ee3", "source": "e2", "target": "e4", "relationship": "recommends" },
+    { "id": "ee4", "source": "e3", "target": "e5", "relationship": "requires"   },
+    { "id": "ee5", "source": "e4", "target": "e6", "relationship": "requires"   },
+    { "id": "ee6", "source": "e5", "target": "e6", "relationship": "recommends" }
+  ]
+}

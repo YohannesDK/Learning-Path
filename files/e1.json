@@ -1,0 +1,1 @@
+{ "id": "e1", "title": "Async vs Sync Communication", "type": "article", "difficulty": "beginner", "min_years": 0, "duration": "1h", "description": "Understand the fundamental difference between synchronous and asynchronous communication patterns.", "links": [{ "label": "Martin Fowler – Async", "url": "https://martinfowler.com" }], "tags": ["fundamentals", "messaging"] }
