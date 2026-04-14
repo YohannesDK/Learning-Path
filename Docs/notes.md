@@ -34,8 +34,8 @@ Internal project or internship project?
   with tags for "topics / subjects"
 
 
-## How - **if** its a learning project for students?
-- Ha ferdig planlagt og implementert structure på prosjekt, som sommer studentene kan bygge applikasjonen oppå. (På forhånd)
+## How ? => **if** its a learning project for students?
+- Ha ferdig planlagt og implementert struktur på prosjekt, som sommer studentene kan bygge applikasjonen oppå. (På forhånd)
     - Backend
     - Fronted
     - Cloud infrastucture
